@@ -7,17 +7,15 @@ import WelcomeMessage from "./components/WelcomeMessage.jsx"
 import JSXRules from './components/JSXRules.jsx';
 import Greeting from './components/Greeting.jsx';
 import ProductInfo from './components/ProductInfo.jsx';
+import UserList from './components/UserList.jsx';
+import ProductList from './components/ProductList.jsx';
 
 const App = () => {
-  const numbers = [1,2,3,4,5]
+  
   return (
     <div>
-      {numbers.map((number => (
-        <ul>
-          <li>{number}</li>
-        </ul>
-      )))
-      }
+      <UserList/>
+      <ProductList/>
     </div>
   )
 }
