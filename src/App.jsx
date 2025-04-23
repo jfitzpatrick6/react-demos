@@ -11,13 +11,22 @@ import UserList from './components/UserList.jsx';
 import ProductList from './components/ProductList.jsx';
 import Person from './components/Person.jsx';
 import Product from './components/Product.jsx';
+import Card from './components/Card.jsx';
+import Weather from './components/Weather.jsx';
+import UserStatus from './components/UserStatus.jsx';
+import GreetingCondition from './components/GreetingCondition.jsx';
+import "./index.css"
+import { FaCartArrowDown } from "react-icons/fa";
+import StyledCard from './components/StyledCard.jsx';
+import ProfileCard from './components/ProfileCard.jsx';
+import IconComponent from './components/IconComponent.jsx';
 
 const App = () => {
-  
   return (
     <div>
-      <Person name="jake" age={25}/>
-      <Product name="Laptop" price={2450}/>
+      <StyledCard/>
+      <ProfileCard/>
+      <IconComponent/>
     </div>
   )
 }
