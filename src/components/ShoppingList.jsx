@@ -19,7 +19,7 @@ const ShoppingList = () => {
 		))
 	    }
 	    <input type='text' placeholder='Next Item' id='listadder'/>
-	    <input type='text' placeholder='Quantity' id='itemquant'/>
+	    <input type='number' placeholder='Quantity' id='itemquant'/>
 	    <button onClick={submitList}>Add Item</button>
 	</div>
     )

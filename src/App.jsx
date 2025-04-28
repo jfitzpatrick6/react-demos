@@ -27,15 +27,13 @@ import Counter from './components/Counter.jsx';
 import TodoList from './components/TodoList.jsx';
 import Profile from './components/Profile.jsx';
 import ShoppingList from './components/ShoppingList.jsx';
+import CopyInput from './components/CopyInput.jsx';
+import Switcher from './components/Switcher.jsx';
 
 const App = () => {
     return (
 	<div>
-	    <h1>React State Examples</h1>
-	    <Counter />
-	    <TodoList />
-	    <Profile />
-	    <ShoppingList />
+	    <Switcher />
 	</div>
     )
 }
