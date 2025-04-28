@@ -20,15 +20,24 @@ import { FaCartArrowDown } from "react-icons/fa";
 import StyledCard from './components/StyledCard.jsx';
 import ProfileCard from './components/ProfileCard.jsx';
 import IconComponent from './components/IconComponent.jsx';
+import { useState } from "react";
+import ComponentOne from './components/ComponentOne.jsx';
+import ComponentTwo from './components/ComponentTwo.jsx';
+import Counter from './components/Counter.jsx';
+import TodoList from './components/TodoList.jsx';
+import Profile from './components/Profile.jsx';
+import ShoppingList from './components/ShoppingList.jsx';
 
 const App = () => {
-  return (
-    <div>
-      <StyledCard/>
-      <ProfileCard/>
-      <IconComponent/>
-    </div>
-  )
+    return (
+	<div>
+	    <h1>React State Examples</h1>
+	    <Counter />
+	    <TodoList />
+	    <Profile />
+	    <ShoppingList />
+	</div>
+    )
 }
 
 export default App;
