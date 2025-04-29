@@ -29,11 +29,18 @@ import Profile from './components/Profile.jsx';
 import ShoppingList from './components/ShoppingList.jsx';
 import CopyInput from './components/CopyInput.jsx';
 import Switcher from './components/Switcher.jsx';
+import { useEffect } from "react";
+import BasicEffect from './components/BasicEffect.jsx'
+import CounterEffect from './components/CounterEffect.jsx'
+import FetchDataEffect from './components/FetchDataEffect.jsx'
 
 const App = () => {
+    
     return (
 	<div>
-	    <Switcher />
+	    <BasicEffect />
+	    <CounterEffect />
+	    <FetchDataEffect />
 	</div>
     )
 }
