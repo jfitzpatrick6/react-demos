@@ -40,14 +40,15 @@ import { createContext } from "react";
 import {UserProvider} from './components/UserContext.jsx';
 import UpdateUser from './components/UpdateUser.jsx'
 import UserProfile from './components/UserProfile.jsx';
+import {useReducer} from "react";
+import CounterUseReducer from './components/CounterUseReducer.jsx';
 
 const App = () => {
-    return (
-      <UserProvider>
-	<UserProfile/>
-	<UpdateUser/>
-      </UserProvider>
-    )
+  return (
+    <div>
+      <CounterUseReducer/>
+    </div>
+  )
 }
 
 export default App;
