@@ -42,11 +42,16 @@ import UpdateUser from './components/UpdateUser.jsx'
 import UserProfile from './components/UserProfile.jsx';
 import {useReducer} from "react";
 import CounterUseReducer from './components/CounterUseReducer.jsx';
+import { useRef } from "react";
+import FocusInput from "./components/FocusInput.jsx";
+import Timer from "./components/Timer.jsx";
 
 const App = () => {
+  const inputElement = useRef(null);
   return (
     <div>
-      <CounterUseReducer/>
+      <FocusInput/>
+      <Timer/>
     </div>
   )
 }
